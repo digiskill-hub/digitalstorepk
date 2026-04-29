@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalStorePK | Premium Digital Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&family=Tenor+Sans&display=swap');
+        
+        :root {
+            --fresh-green: #1a2e26;
+            --fresh-gold: #e2b25b;
+            --fresh-cream: #fcfaf7;
+        }
+
+        body {
+            font-family: 'Lexend', sans-serif;
+            background-color: var(--fresh-cream);
+            color: var(--fresh-green);
+            scroll-behavior: smooth;
+        }
+
+        .hero-title {
+            font-family: 'Tenor Sans', sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .btn-fresh {
+            background-color: var(--fresh-gold);
+            color: var(--fresh-green);
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.85rem;
+            display: inline-block;
+        }
+
+        .btn-fresh:hover {
+            background-color: #d1a14a;
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(226, 178, 91, 0.2);
+        }
+
+        .hero-section {
+            background-color: var(--fresh-green);
+            background-image: linear-gradient(rgba(26, 46, 38, 0.85), rgba(26, 46, 38, 0.85)), 
+                              url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072');
+            background-size: cover;
+            background-position: center;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(26, 46, 38, 0.15);
+        }
+
+        .section-tag {
+            color: var(--fresh-gold);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.75rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .image-zoom {
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .image-zoom {
+            transform: scale(1.1);
+        }
+
+        .nav-fixed {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            line-height: 1;
+        }
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+        }
+        .logo-subtext {
+            color: var(--fresh-gold);
+            font-size: 11px;
+            margin-top: -1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 nav-fixed border-b border-gray-100">
+        <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <a href="#" class="logo-container text-green-900">
+                <i class="fas fa-microchip text-yellow-600 mr-2 text-sm"></i>
+                <div class="logo-text uppercase">
+                    <span>DIGITAL</span>
+                    <span class="logo-subtext">STOREPK</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 items-center font-bold text-[10px] tracking-widest">
+                <a href="#home" class="hover:text-yellow-600 transition">HOME</a>
+                <a href="#shop" class="hover:text-yellow-600 transition">SHOP</a>
+                <a href="#about" class="hover:text-yellow-600 transition">ABOUT</a>
+                <a href="#contact" class="hover:text-yellow-600 transition">CONTACT</a>
+                <a href="https://wa.me/923251290215" class="btn-fresh py-1.5 px-5 text-[10px]">JOIN US</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white px-6">
+        <div class="container mx-auto text-center max-w-4xl">
+            <span class="section-tag">Pure Potential. Zero Fluff.</span>
+            <h1 class="hero-title text-4xl md:text-6xl mb-8">
+                Grow Your <span class="text-yellow-500">Digital</span> Future
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed max-w-2xl mx-auto font-light">
+                Unlock high-performance skills with our premium digital assets. Our technical guides help you build modern earning plans for the digital world.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#shop" class="btn-fresh">BROWSE CATALOG</a>
+                <a href="#contact" class="border-2 border-white/30 hover:bg-white hover:text-green-950 transition px-8 py-4 rounded-full font-bold text-sm tracking-widest uppercase">
+                    GET IN TOUCH
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="py-32 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-20">
+                <span class="section-tag">Technical Resources</span>
+                <h2 class="text-4xl md:text-6xl font-bold uppercase">The Digital Pantry</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- E-books -->
+                <div class="product-card">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=800" alt="Tablet and keyboard setup" class="w-full h-full object-cover image-zoom">
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-2xl font-bold mb-4">E-books & Guides</h3>
+                        <p class="text-gray-600 text-sm mb-8 leading-relaxed">Master freelancing, fitness strategies, and specialized technical notes to speed up your growth.</p>
+                        <a href="https://wa.me/923251290215" class="text-yellow-600 font-bold uppercase tracking-widest text-xs">
+                            LEARN MORE <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Templates -->
+                <div class="product-card">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="Website UI charts" class="w-full h-full object-cover image-zoom">
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-2xl font-bold mb-4">Templates</h3>
+                        <p class="text-gray-600 text-sm mb-8 leading-relaxed">Professional CVs, social media assets, and business plans designed for technical excellence.</p>
+                        <a href="https://wa.me/923251290215" class="text-yellow-600 font-bold uppercase tracking-widest text-xs">
+                            BROWSE NOW <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Online Courses -->
+                <div class="product-card">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=800" alt="Clean tech workstation on desk" class="w-full h-full object-cover image-zoom">
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-2xl font-bold mb-4">Online Courses</h3>
+                        <p class="text-gray-600 text-sm mb-8 leading-relaxed">High-level specialized mini-courses to prepare you for the modern digital workplace.</p>
+                        <a href="https://wa.me/923251290215" class="text-yellow-600 font-bold uppercase tracking-widest text-xs">
+                            START LEARNING <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-stone-100 py-32 px-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1000" alt="Modern Tech Workspace Office" class="rounded-3xl shadow-2xl">
+                <div class="absolute -bottom-10 -right-10 hidden md:block">
+                    <div class="bg-yellow-600 text-white p-10 rounded-3xl">
+                        <p class="text-4xl font-bold mb-1">100%</p>
+                        <p class="text-xs uppercase tracking-widest font-bold">Tech Optimized</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span class="section-tag">Philosophy</span>
+                <h2 class="text-4xl md:text-6xl font-bold mb-10 leading-tight uppercase">About Us</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                    We deliver high-quality digital products designed with technical precision and ease of use in mind. Our goal is to make your digital journey simple and successful.
+                </p>
+                <a href="#contact" class="btn-fresh">WORK WITH US</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-6 text-center">
+        <div class="container mx-auto">
+            <span class="section-tag">Let's Connect</span>
+            <h2 class="text-4xl md:text-6xl font-bold mb-20 tracking-tight uppercase">Contact us</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="https://wa.me/923251290215" target="_blank" class="p-10 bg-white border border-stone-200 hover:border-yellow-600 transition group rounded-3xl">
+                    <i class="fab fa-whatsapp text-3xl mb-4 text-green-600 group-hover:scale-110 transition inline-block"></i>
+                    <h4 class="font-bold text-sm tracking-widest uppercase">WhatsApp</h4>
+                </a>
+                <a href="https://www.tiktok.com/@mirza.jilan07" target="_blank" class="p-10 bg-white border border-stone-200 hover:border-yellow-600 transition group rounded-3xl">
+                    <i class="fab fa-tiktok text-3xl mb-4 text-black group-hover:scale-110 transition inline-block"></i>
+                    <h4 class="font-bold text-sm tracking-widest uppercase">TikTok</h4>
+                </a>
+                <a href="https://www.instagram.com/mirzashaban51" target="_blank" class="p-10 bg-white border border-stone-200 hover:border-yellow-600 transition group rounded-3xl">
+                    <i class="fab fa-instagram text-3xl mb-4 text-pink-600 group-hover:scale-110 transition inline-block"></i>
+                    <h4 class="font-bold text-sm tracking-widest uppercase">Instagram</h4>
+                </a>
+                <!-- Facebook URL bug fixed: removed space from URL -->
+                <a href="https://www.facebook.com/ShabanSaleem" target="_blank" class="p-10 bg-white border border-stone-200 hover:border-yellow-600 transition group rounded-3xl">
+                    <i class="fab fa-facebook text-3xl mb-4 text-blue-600 group-hover:scale-110 transition inline-block"></i>
+                    <h4 class="font-bold text-sm tracking-widest uppercase">Facebook</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-16 px-6">
+        <div class="container mx-auto text-center border-t border-stone-800 pt-10">
+            <p class="text-[10px] tracking-[0.3em] font-medium uppercase">
+                &copy; 2026 DIGITALSTOREPK. All Rights Reserved. Made for digital creators.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
